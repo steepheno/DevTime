@@ -36,6 +36,7 @@ export const [themeClass, vars] = createTheme({
     gray: {
       white: '#FFFFFF',
       50: '#F9FAFB',
+      blur: 'rgba(249, 250, 251, 0.5)',
       100: '#F0F2F5',
       200: '#E5E7EB',
       300: '#CCD0D6',
@@ -52,13 +53,14 @@ export const [themeClass, vars] = createTheme({
       dim: 'rgba(0, 0, 0, 0.5)',
     },
   },
-  
+
   /* Space */
   space: {
     // 컴포넌트 간 스페이싱
     2: '2px',
     4: '4px',
     8: '8px',
+    10: '10px',
     12: '12px',
     16: '16px',
     20: '20px',
@@ -78,25 +80,25 @@ export const [themeClass, vars] = createTheme({
   font: {
     family: {
       base: "'Pretendard Variable', Pretendard, sans-serif",
-      timer: 'var(--font-dseg7), monospace'
+      timer: 'var(--font-dseg7), monospace',
     },
     size: {
-      heading: '1.5rem',    // 24px
-      title: '1.25rem',     // 20px
-      subtitle: '1.125rem', // 18px
-      body: '1rem',         // 16px
-      bodySmall: '0.875rem',// 14px
-      caption: '0.75rem',   // 12px
-      label: '0.625rem',    // 10px
+      heading: '1.5rem',     // 24px
+      title: '1.25rem',      // 20px
+      subtitle: '1.125rem',  // 18px
+      body: '1rem',          // 16px
+      bodySmall: '0.875rem', // 14px
+      caption: '0.75rem',    // 12px
+      label: '0.625rem',     // 10px
     },
     lineHeight: {
-      heading: '1.875rem',  // 30px
-      title: '1.5rem',      // 24px
+      heading: '1.875rem', // 30px
+      title: '1.5rem', // 24px
       subtitle: '1.375rem', // 22px
-      body: '1.25rem',      // 20px
-      bodySmall: '1.125rem',// 18px
-      caption: '1rem',      // 16px
-      label: '0.75rem',     // 12px
+      body: '1.25rem', // 20px
+      bodySmall: '1.125rem', // 18px
+      caption: '1rem', // 16px
+      label: '0.75rem', // 12px
     },
     weight: {
       regular: '400',
