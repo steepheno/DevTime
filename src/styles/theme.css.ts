@@ -92,13 +92,13 @@ export const [themeClass, vars] = createTheme({
       label: '0.625rem',     // 10px
     },
     lineHeight: {
-      heading: '1.875rem', // 30px
-      title: '1.5rem', // 24px
-      subtitle: '1.375rem', // 22px
-      body: '1.25rem', // 20px
+      heading: '1.875rem',   // 30px
+      title: '1.5rem',       // 24px
+      subtitle: '1.375rem',  // 22px
+      body: '1.25rem',       // 20px
       bodySmall: '1.125rem', // 18px
-      caption: '1rem', // 16px
-      label: '0.75rem', // 12px
+      caption: '1rem',       // 16px
+      label: '0.75rem',      // 12px
     },
     weight: {
       regular: '400',
