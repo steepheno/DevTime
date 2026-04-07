@@ -6,6 +6,7 @@ export const [themeClass, vars] = createTheme({
     primaryBlue: {
       base: '#4C79FF',
       light10: 'rgba(76, 121, 255, 0.1)',
+      light20: 'rgba(76, 121, 255, 0.2)',
       light30: 'rgba(76, 121, 255, 0.3)',
       gradient: 'linear-gradient(135deg, #4C79FF, #023E99)',
     },
@@ -77,6 +78,7 @@ export const [themeClass, vars] = createTheme({
   font: {
     family: {
       base: "'Pretendard Variable', Pretendard, sans-serif",
+      timer: 'var(--font-dseg7), monospace'
     },
     size: {
       heading: '1.5rem',    // 24px

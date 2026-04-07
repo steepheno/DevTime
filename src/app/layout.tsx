@@ -1,12 +1,20 @@
 import type { Metadata } from 'next';
-import '@/styles/global.css'
+import '@/styles/global.css';
 import localFont from 'next/font/local';
 import { themeClass } from '@/styles/theme.css';
+import { Header } from '@/components/header';
 
 const pretendard = localFont({
   src: '../fonts/PretendardVariable.woff2',
   display: 'swap',
   weight: '100 900',
+  variable: '--font-pretendard',
+});
+
+const dseg7 = localFont({
+  src: '../fonts/DSEG7Classic-Bold.woff2',
+  display: 'swap',
+  variable: '--font-dseg7',
 });
 
 export const metadata: Metadata = {
@@ -20,11 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="ko"
-      className={`${themeClass} ${pretendard.className}`}
-    >
-      <body>{children}</body>
+    <html lang="ko">
+      <body className={`${themeClass} ${pretendard.variable} ${pretendard.className} ${dseg7.variable}`}>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

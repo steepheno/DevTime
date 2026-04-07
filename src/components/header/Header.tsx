@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logo from '@/assets/icons/✅ Logo.svg';
+import Logo from '@/assets/icons/logo.svg';
 import Link from 'next/link';
 import * as style from './Header.css';
 import { UserIcon } from './UserIcon';
@@ -11,9 +11,8 @@ export function Header() {
         <div className={style.leftSection}>
           <Link href={'/'}>
             <Image
-              src={logo}
+              src={Logo}
               alt="DevTime 로고"
-              priority
             />
           </Link>
           <nav className={style.nav}>
